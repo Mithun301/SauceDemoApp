@@ -2,7 +2,6 @@
 const loginData = require("../../testData/login.data");
 const logInAction = require("../pageobjects/logIn/logInAction");
 const logInLocator = require("../pageobjects/logIn/logInLocator");
-const homeAction = require("../pageobjects/homePage/homeAction");
 describe('My Login application', () => {   
     it('Open the App', async () => { 
      await logInAction.clickMenuButton();

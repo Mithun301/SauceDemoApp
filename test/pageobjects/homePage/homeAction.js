@@ -1,6 +1,14 @@
 const homeLocator = require("./homeLocator");
-
+const logInAction = require("../logIn/logInAction");
 class HomeAction {
+
+    async resetAppState(){
+        await logInAction.clickMenuButton();
+        await browser.pause(2000);
+        await homeLocator.resetButton.click();
+        await homeLocator.restApp.click();
+        await homeLocator.okButton.click();
+    }
     async clickSortButton() {
         await homeLocator.sortButton.click();
     }
