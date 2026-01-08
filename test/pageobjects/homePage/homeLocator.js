@@ -3,11 +3,11 @@ class HomeLocator {
         return $("//android.widget.TextView[@resource-id='com.saucelabs.mydemoapp.android:id/itemTV' and @text='Reset App State']");
     }
     get restApp(){
-        return $("~android:id/button1");
+        return $("//android.widget.Button[@resource-id='android:id/button1']");
     
     }
     get okButton(){
-        return $("~android:id/button1");
+        return $("//android.widget.Button[@resource-id='android:id/button1']");
     }
     get sortButton() {
         return $("id:com.saucelabs.mydemoapp.android:id/sortIV");
