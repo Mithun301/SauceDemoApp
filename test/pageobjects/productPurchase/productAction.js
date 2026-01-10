@@ -23,8 +23,8 @@ class ProductAction{
     }
     async checkOutProduct(){
         await productLocator.checkoutButton.click();
-        await productLocator.logIn.click();
-        await productLocator.logInButton.click();
+        //await productLocator.logIn.click();
+        //await productLocator.logInButton.click();
         
        
         await productLocator.firstNameField.setValue(checkoutData.checkout.fullName);

@@ -13,11 +13,11 @@ describe('My Login application', () => {
         await logInAction.enterUsername(loginData.empty1.userName);
         await logInAction.enterPassword(loginData.empty1.password);
         await logInAction.clickLoginButton();
-        await expect(logInLocator.errorMessage1).toHaveText("Username is required");
+        await expect(logInLocator.errorMessage1).toHaveText("Username   is required");
         await browser.pause(3000);
 
   });
-    it('should Show Error message with empty password credentials', async () => {
+   it('should Show Error message with empty password credentials', async () => {
         
         await logInAction.enterUsername(loginData.empty2.userName);
         await logInAction.enterPassword(loginData.empty2.password);
